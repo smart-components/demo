@@ -1,0 +1,70 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  background-color: #313131;
+}
+
+#main-section {
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+#bound-container {
+  display: inline-block;
+  position: relative;
+}
+
+smart-button {
+  text-align: left;
+  position: relative;
+}
+
+.row, .row > * {
+  display: inline-block;
+  margin: 1rem 2rem;
+  vertical-align: middle;
+}
+
+.menu-group-row, .menu-group-row > * {
+  margin: 1rem 2rem;
+}
+.menu-group-row {
+  display: inline-block;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  overflow: visible;
+}
+
+#smart-app-button {
+  background-image: url('browser.png');
+  width: 18rem;
+  height: 18rem;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+#smart-app-button:after {
+  width: 18rem;
+  height: 5rem;
+  font-size: 1.6rem;
+}
+
+#smart-app-button.focused {
+  outline: 0.4rem solid #ffffff;
+}
+
+#smart-app-button.pressed {
+  outline: 0.6rem solid #ffffff;
+}
+
+#smart-banner-button {
+  background-image: url('banner.jpg');
+}
+
+smart-button.good {
+  background-size: auto;
+}

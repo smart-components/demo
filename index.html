@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Web Components for Smart TV</title>
+  <meta name="description" content="Web Components for Smart TV" />
+  <link rel="stylesheet" type="text/css" href="bower_components/smart-icons/smart-icons.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/smart-bubbles/style.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/menu-group/style.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/smart-button/style.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/smart-dialog/style.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/smart-modal-dialog/style.css">
+  <link rel="stylesheet" type="text/css" href="style/main.css">
+
+  <script src="bower_components/evt/index.js" type="text/javascript"></script>
+  <script src="bower_components/smart-bubbles/script.js" type="text/javascript"></script>
+  <script src="bower_components/menu-group/script.js" type="text/javascript"></script>
+  <script src="bower_components/smart-button/script.js" type="text/javascript"></script>
+  <script src="bower_components/smart-dialog/script.js" type="text/javascript"></script>
+  <script src="bower_components/smart-modal-dialog/script.js" type="text/javascript"></script>
+  <script src="script.js"></script>
+</head>
+<body role="application">
+  <section id="main-section">
+    <div id="bound-container">
+      <div class="row">
+        <smart-button id="smart-app-button" class="fullsized app-deck" label="Firefox" app-type="app" type="app-button"></smart-button>
+        <smart-button id="smart-banner-button" label="Marketplace" type="banner-button"></smart-button>
+      </div><br>
+      <div class="row">
+        <smart-button type="icon-button" data-icon="home"></smart-button>
+        <smart-button type="simple-text">Text Button</smart-button>
+        <smart-button type="underlined-text">Normal Button</smart-button>
+      </div><br>
+      <div class="row">
+        <smart-button id="open-button1" type="circle-text">Text Button</smart-button>
+        <smart-button id="open-button2" type="text-and-icon" data-icon="launch">Icon Button</smart-button>
+      </div><br>
+      <div class="menu-group-row">
+        <menu-group id="rotating-menu-group" data-icon="setting" rotate class="closed">
+          <smart-button id="modal-dialog" type="simple-text">Modal Dialog</smart-button>
+          <smart-button type="simple-text">Option 2</smart-button>
+          <smart-button type="simple-text">Option 3</smart-button>
+        </menu-group><br>
+        <menu-group id="icon-switcher-menu-group" data-icon="laptop" class="closed">
+          <smart-button type="simple-text" data-target-icon="laptop">Laptop</smart-button>
+          <smart-button type="simple-text" data-target-icon="mouse">Mouse</smart-button>
+          <smart-button type="simple-text" data-target-icon="game">Game</smart-button>
+        </menu-group>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
